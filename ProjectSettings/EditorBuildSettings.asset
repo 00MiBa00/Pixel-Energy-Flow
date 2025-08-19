@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnergyScene.unity
     guid: a4fa2768c05984635a8b7fdbc7d4ebcd
+  - enabled: 1
+    path: Assets/Scenes/StatsScene.unity
+    guid: 2f8a875458c2649fe8273e404dee7bb9
   m_configObjects: {}
