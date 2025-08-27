@@ -41,7 +41,28 @@ namespace Models.Energy
             EnsureLoaded();
             return currentWeek.Days;
         }
-        
+
+        public static DayEnergyData GetTodayData()
+        {
+            EnsureLoaded();
+
+            string todayYmd = DateTime.Now.Date.ToString("yyyy-MM-dd");
+            var todayData = currentWeek.Days.Find(d => d.DateYmd == todayYmd);
+            
+            if (todayData == null)
+            {
+                todayData = new DayEnergyData
+                {
+                    DateYmd = todayYmd,
+                    Energy = 0f
+                };
+                currentWeek.Days.Add(todayData);
+                Save();
+            }
+
+            return todayData;
+        }
+
         private static void EnsureLoaded()
         {
             if (currentWeek == null)
