@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Models.Scenes;
+using Types;
 using UnityEngine;
 using UnityEngine.UI;
 using Views.General;
@@ -66,7 +67,7 @@ namespace Controllers.Scenes
 
         private void OnPressBackBtn()
         {
-            
+            base.LoadScene(SceneType.MenuScene);
         }
     }
 }

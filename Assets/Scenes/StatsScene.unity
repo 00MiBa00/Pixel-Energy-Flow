@@ -524,6 +524,7 @@ MonoBehaviour:
   - {fileID: 42251851}
   - {fileID: 860377144}
   _animationPanel: {fileID: 496585974}
+  _backBtn: {fileID: 730249734}
 --- !u!1 &402784502
 GameObject:
   m_ObjectHideFlags: 0

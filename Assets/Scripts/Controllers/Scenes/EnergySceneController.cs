@@ -3,6 +3,7 @@ using Models.Scenes;
 using UnityEngine;
 using Views.Energy;
 using TMPro;
+using Types;
 using Views.General;
 
 namespace Controllers.Scenes
@@ -127,6 +128,7 @@ namespace Controllers.Scenes
             switch (answer)
             {
                 case 0:
+                    base.LoadScene(SceneType.MenuScene);
                     break;
                 case 1:
                     TryGenerateEnergy(false);

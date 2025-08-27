@@ -1,4 +1,5 @@
 using System.Collections;
+using Types;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,9 +32,9 @@ namespace Controllers.Scenes
         protected abstract void Subscribe();
         protected abstract void Unsubscribe();
 
-        protected void LoadScene(string sceneName)
+        protected void LoadScene(SceneType type)
         {
-            StartCoroutine(DelayLoadScene(sceneName));
+            StartCoroutine(DelayLoadScene(type.ToString()));
         }
 
         private IEnumerator DelayLoadScene(string sceneName)
