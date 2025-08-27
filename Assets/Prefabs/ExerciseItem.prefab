@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5219551887426868749}
   - component: {fileID: 6684504459828033073}
   - component: {fileID: 6295268463116751240}
+  - component: {fileID: 3732237696716838654}
   m_Layer: 5
   m_Name: ExerciseItem
   m_TagString: Untagged
@@ -36,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 108.004166, y: -25.30502}
+  m_AnchoredPosition: {x: 108.00415, y: -25.305054}
   m_SizeDelta: {x: 160.23166, y: 38.61004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6684504459828033073
@@ -77,6 +78,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3732237696716838654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796262911944970221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d38a72340bbc64b768d956d2cdd2e011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _title: {fileID: 2040268705335444575}
+  _toggle: {fileID: 8668322554099029765}
 --- !u!1 &4174305595595053745
 GameObject:
   m_ObjectHideFlags: 0
